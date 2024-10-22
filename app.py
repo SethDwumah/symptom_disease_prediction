@@ -5,7 +5,7 @@ from helper_prabowo_ml import clean_html, remove_, remove_digits, remove_special
 from sklearn.preprocessing import LabelEncoder
 from sklearn.feature_extraction.text import TfidfVectorizer
 # Load the machine learning model components
-vect = joblib.load('Vectorizer.pkl')
+vect = joblib.load('Vectorizers.pkl')
 model = joblib.load('Disease_model.pkl')
 lab_encoder = joblib.load('label_encoder.pkl')
 
