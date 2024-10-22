@@ -1,8 +1,9 @@
 import streamlit as st
 import pickle
-from dotenv import load_dotenv
 from streamlit_chat import message
-
+from helper_prabowo_ml import clean_html, remove_, remove_digits, remove_special_characters, removeStopWords, remove_links, punct, email_address, lower, non_ascii
+from sklearn.preprocessing import LabelEncoder
+from sklearn.feature_extraction.text import TfidfVectorizer
 # Load the machine learning model components
 vect = pickle.load(open('Vectorizer.pkl', 'rb'))
 model = pickle.load(open('Disease_model.pkl', 'rb'))
@@ -25,7 +26,7 @@ def clean_text_for_prediction(text):
 def init():
     st.set_page_config(page_title="Disease Prediction Assistant", page_icon=":pill:")
     st.header("Disease Prediction Based on Symptoms")
-    load_dotenv()
+    
 
 def main():
     init()
