@@ -2,5 +2,5 @@ streamlit
 streamlit_chat
 scikit-learn
 wordcloud
-pickle
+joblib
 helper_prabowo_ml
