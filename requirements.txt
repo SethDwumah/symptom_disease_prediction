@@ -1,0 +1,6 @@
+streamlit
+streamlit_chat
+scikit-learn
+wordcloud
+pickle
+helper_prabowo_ml
