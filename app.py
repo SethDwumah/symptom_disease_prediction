@@ -1,13 +1,13 @@
 import streamlit as st
-import pickle
+import joblib
 from streamlit_chat import message
 from helper_prabowo_ml import clean_html, remove_, remove_digits, remove_special_characters, removeStopWords, remove_links, punct, email_address, lower, non_ascii
 from sklearn.preprocessing import LabelEncoder
 from sklearn.feature_extraction.text import TfidfVectorizer
 # Load the machine learning model components
-vect = pickle.load(open('Vectorizer.pkl', 'rb'))
-model = pickle.load(open('Disease_model.pkl', 'rb'))
-lab_encoder = pickle.load(open('label_encoder.pkl', 'rb'))
+vect = joblib.load('Vectorizer.pkl')
+model = joblib.load('Disease_model.pkl')
+lab_encoder = joblib.load('label_encoder.pkl')
 
 def clean_text_for_prediction(text):
     # Apply the cleaning functions step by step on a single text instance
