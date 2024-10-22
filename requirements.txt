@@ -7,4 +7,3 @@ beautifulsoup4
 nltk
 numpy
 pandas
-wget.download("https://raw.githubusercontent.com/yogawicaksana/helper_prabowo/main/helper_prabowo_ml.py", out="helper_prabowo_ml.py")
