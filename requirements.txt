@@ -3,4 +3,7 @@ streamlit_chat
 scikit-learn
 wordcloud
 joblib
-helper_prabowo_ml
+beautifulsoup4
+nltk
+numpy
+pandas
